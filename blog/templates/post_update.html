@@ -1,0 +1,12 @@
+<!-- templates/post_delete.html -->
+{% extends 'base.html' %}
+{% block content %}
+    <div class="post-entry">
+        <h2>Modificar</h2>
+    </div>
+    <form action="" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Modifcar">
+    </form>
+{% endblock content %}
